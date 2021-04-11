@@ -21,3 +21,7 @@ trabajos posteriores.
 <h4> Problema </h4>
 
 Adquirir y preparar los recursos necesarias para resolver los trabajos del curso.
+
+<h4> Tareas </h4>
+
+Crear una cuenta GitHub, si no la tiene. Crear repositorio de la materia, instalar y configurar las herramientas necesarias para poder resolver trabajos posteriores.
