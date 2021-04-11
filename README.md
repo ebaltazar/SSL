@@ -1,4 +1,4 @@
-<h3> Sintaxis y Semántica de los Lenguajes <h3>
+<h3> Sintaxis y Semántica de los Lenguajes </h3>
 
 Curso K2051 - Lunes Turno Noche
 
