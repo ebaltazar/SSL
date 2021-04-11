@@ -9,3 +9,5 @@ Legajo: 155.478-5
 Apellido y Nombre: Baltazar Llusco, Elmer
 
 Usuario GitHub: ebaltazar
+
+Compilador utilizado: C11 (MinGW)
