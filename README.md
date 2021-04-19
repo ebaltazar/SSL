@@ -12,6 +12,7 @@ Usuario GitHub: ebaltazar
 
 Compilador utilizado: C18 (Visual Studio Code y MinGW)
 
+
 <h3> Procesos de Compilación </h3>
 
 Fuente -> Preprocesamiento -> Fuente Preprocesado
@@ -25,5 +26,9 @@ Para esto, la transforma al lenguaje ensamblador propio de nuestro procesador y 
 
 Linkeo -> Ejecutable
 
-Luego, para lograr que el código objeto sea ejecutable se realiza un linkeo (enlace) con las librerías utilizadas del sistema.
+Luego, para lograr que el código objeto sea ejecutable se realiza un linkeo (enlace) con las librerías utilizadas del sistema (y otras que utilice).
 Gracias a esto, el archivo contendrá lo necesario para poder crear el ejecutable.
+
+
+![image](https://user-images.githubusercontent.com/38117838/115179800-87504000-a0aa-11eb-8eea-5fc634e019d3.png)
+Etapas de la compilación (Imagen)
