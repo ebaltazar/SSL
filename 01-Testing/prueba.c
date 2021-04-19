@@ -5,12 +5,10 @@ int main(void)
 {
     
     printf("Hola Elmer!\n");
-    printf("Ingresa anio de nacimiento: ");
-    int anio=0;
-    scanf("%d", &anio);
-    anio = 2021-anio; // Reutilizamos variable
-    printf("Tenes %d anios.\n", anio);
+    int anioNac=1996;
+    int edad = 2021-anioNac;
+    printf("Tenes %d anios.\n", edad);
 
-    assert(2==1+1);
+    assert(25==edad);
     return 0;
 }
