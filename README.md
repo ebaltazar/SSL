@@ -10,4 +10,4 @@ Apellido y Nombre: Baltazar Llusco, Elmer
 
 Usuario GitHub: ebaltazar
 
-Compilador utilizado: C11 (MinGW)
+Compilador utilizado: C18 (Visual Studio Code y MinGW)
