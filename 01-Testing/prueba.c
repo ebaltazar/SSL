@@ -6,7 +6,7 @@ int main(void)
     
     printf("Hola Elmer!\n");
     printf("Ingresa anio de nacimiento: ");
-    int anio;
+    int anio=0;
     scanf("%d", &anio);
     anio = 2021-anio; // Reutilizamos variable
     printf("Tenes %d anios.\n", anio);
