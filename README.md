@@ -18,9 +18,10 @@ Fuente -> Preprocesamiento -> Fuente Preprocesado
 
 El primer paso que hace el compilador es pre-procesar el código fuente, interpreta toda directiva #define, #include.. entre otros y genera una salida.
 
-Compilación -> Código Objeto
+Compilación -> Código Ensamblador -> Ensamblador -> Código Objeto
 
-En el siguiente paso, se procede a realizar la compilación de la salida mencionada para formar un código binario NO ejecutable (Código Objeto)
+En el siguiente paso, se procede a realizar la compilación de la salida mencionada para formar un código binario NO ejecutable.
+Para esto, la transforma al lenguaje ensamblador propio de nuestro procesador y después se procede a 'ensamblarlo' a código objeto.
 
 Linkeo -> Ejecutable
 
