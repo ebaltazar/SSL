@@ -115,3 +115,17 @@ Comando Ejecutado: gcc -o hello7 hello7.c
 Resultado: La respuesta es 42
 Al quitar el primer prototipo de printf, no le quita la funcionalidad al programa dado que ahí no se encuentra la definición. Sin embargo, si arroja un Warning aclarando la declaración implícita de la función printf.
 
+<h3> hello8.c -> hello8 </h3>
+
+Comando Ejecutado: gcc -o hello8 hello8.c studio.c
+
+Resultado: La respuesta es 42
+A pesar de haber dos archivos fuente (.c), se logra generar un ejecutable. No obstante, se observa un Warning al generarlo todo en un sólo paso.
+Al cambiar la cantidad de parámetros de la función prontf, el ejecutable se genera pero al agregar un parámetro advierte que esperaba una sola variable, tomando sólo la primera y al quitar la i, arroja un valor no esperado.
+
+<h3> hello9.c -> hello9 </h3>
+
+Comando Ejecutado: gcc -o hello9 hello9.c studio2.c
+
+Resultado: La respuesta es 42
+Al generar el ejecutable, no arroja ningún error ni ninguna advertencia dado que al incluir el contrato o header (.h) se definen los prototipos de las funciones y se puede evitar errores mucho antes.
