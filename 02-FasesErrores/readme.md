@@ -49,3 +49,24 @@ mantener en readme.md la misma numeración de la secuencia de pasos.
 
 • El programa ejemplo debe enviar por stdout la frase La respuesta es 42, el
 valor 42 debe surgir de una variable.
+
+
+<h3> hello2.c -> hello2.i </h3>
+
+Comando Ejecutado: gcc hello2.c -E > hello2.i
+
+Resultado: Se observa en el archivo preprocesado que reemplaza el comentario /*medio*/ por un espacio en blanco.
+Además, en los primeros renglones se visualiza código de las funciones de la biblioteca estándar.
+
+<h3> hello3.c -> hello3.i </h3>
+
+Comando Ejecutado: gcc hello3.c -E > hello3.i
+
+Resultado: Las diferencias se dan en la primera linea
+#1 "hello3.c"   #1 "<built-in>"   #1 "<command-line>"   #1 "hello3.c"
+  
+<h3> hello3.c -> hello3.s </h3>
+
+Comando Ejecutado: gcc -S hello3.c
+
+Error: Tira un warning porque la función no ha sido declarada y sugiere otro nombre. Además, espera que en la sentencia main haya un } para cerrarla.
