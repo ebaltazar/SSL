@@ -89,6 +89,7 @@ Comando Ejecutado: ld -o hello4 hello4.o
 
 Errores: undefined reference to `__main`
          undefined reference to `prontf`
+         
 Al intentar enlazar y generar el ejecutable, no reconoce las funciones main ni prontf.
          
 <h3> hello5.c -> hello5 </h3>
@@ -96,5 +97,21 @@ Al intentar enlazar y generar el ejecutable, no reconoce las funciones main ni p
 Comando Ejecutado: gcc -o hello5 hello5.c
 
 Resultado: La respuesta es 4200880
+
 Para corregirlo modificamos el prontf por printf, por lo que ya puede encontrar la definición en la biblioteca estándar.
 Dado que la función printf esperaba imprimir una variable, al no encontrarlo especificado arroja un valor cualquiera. 
+
+<h3> hello6.c -> hello6 </h3>
+
+Comando Ejecutado: gcc -o hello6 hello6.c
+
+Resultado: La respuesta es 42
+Al colocar la variable i, no arroja errores ya que la función esperaba una variable.
+
+<h3> hello7.c -> hello7 </h3>
+
+Comando Ejecutado: gcc -o hello7 hello7.c
+
+Resultado: La respuesta es 42
+Al quitar el primer prototipo de printf, no le quita la funcionalidad al programa dado que ahí no se encuentra la definición. Sin embargo, si arroja un Warning aclarando la declaración implícita de la función printf.
+
