@@ -70,3 +70,24 @@ Resultado: Las diferencias se dan en la primera linea
 Comando Ejecutado: gcc -S hello3.c
 
 Error: Tira un warning porque la función no ha sido declarada y sugiere otro nombre. Además, espera que en la sentencia main haya un } para cerrarla.
+
+<h3> hello4.c -> hello4.s </h3>
+
+Comando Ejecutado: gcc -S hello4.c
+
+Resultado: Se puede observar el programa en código ensamblador. Por lo que ve, muestra las llamadas a las funciones main y prontf en código ensamblador. 
+
+<h3> hello4.s -> hello4.o </h3>
+
+Comando Ejecutado: as -o hello4.o hello4.s
+
+Resultado: Transforma el programa de código ensamblador a código objeto.
+
+<h3> hello4.o </h3>
+
+Comando Ejecutado: ld -o hello4 hello4.o
+
+Errores: undefined reference to `__main`
+         undefined reference to `prontf`
+Al intentar enlazar y generar el ejecutable, no reconoce las funciones main ni prontf.
+         
