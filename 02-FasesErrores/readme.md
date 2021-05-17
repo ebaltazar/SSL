@@ -91,3 +91,10 @@ Errores: undefined reference to `__main`
          undefined reference to `prontf`
 Al intentar enlazar y generar el ejecutable, no reconoce las funciones main ni prontf.
          
+<h3> hello5.c -> hello5 </h3>
+
+Comando Ejecutado: gcc -o hello5 hello5.c
+
+Resultado: La respuesta es 4200880
+Para corregirlo modificamos el prontf por printf, por lo que ya puede encontrar la definición en la biblioteca estándar.
+Dado que la función printf esperaba imprimir una variable, al no encontrarlo especificado arroja un valor cualquiera. 
